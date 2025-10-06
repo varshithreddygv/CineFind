@@ -1,0 +1,59 @@
+.favorites {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: radial-gradient(circle at top, #141414, #000);
+  min-height: 100vh;
+}
+
+.favorites h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e50914;
+  text-transform: uppercase;
+}
+
+.favorites-empty p {
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.movies-grid > * {
+  animation: fadeIn 0.4s ease-out forwards;
+}
